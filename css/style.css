@@ -274,6 +274,7 @@ header ul li a:hover{
     border-radius: 30px;
     border: 2px solid transparent;
     transition: 0.5s;
+    display: inline-block;
 }
 .btn:hover{
     background-color: transparent;
@@ -337,7 +338,17 @@ header ul li a:hover{
     .home .content .container-texts .wrapper .type .cursur { font-size: 30px; }    
     .home .image{
         display: none;
+        width: 0%;
     }
+    /* .container-texts{
+        width: 1000px;
+        margin-left: -15px;
+        margin-right: -15px;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+    } */
+      
 }
 @media (max-width:767px) {
     .home .content .container-texts .wrapper .type .typeing::after { font-size: 20px; }
@@ -348,10 +359,7 @@ header ul li a:hover{
     .home h1{
         font-size: 3.2rem;
     }
-    .home .image{
-        display: none;
-    }
-    
+   
       
 }
 
@@ -505,7 +513,7 @@ header ul li a:hover{
     transform: scale(1.1);
 }
 .container-texts{
-    width: 100%;
+    width: 202%;
     margin-left: -15px;
     margin-right: -15px;
     display: flex;
@@ -617,122 +625,7 @@ header ul li a:hover{
         
     }
 }
-/* .about 
-{
-    padding-top: 90px;
-    padding-bottom: var(--padding-bottom);
-    background-color: var(--bg-one);
-    padding-left: 80px;
-    padding-right: 80px;
-    height: 100vh;
-}
 
-
-
-.about .container
-{
-    background-color: var(--lightColor);
-    box-shadow: 0px 2px 10px 0px var(--shadow);
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding: 50px 30px;
-}
-
-.about .container .col { width: calc(50% - 30px); }
-@media (max-width:767px) { .about .container .col { width: 100%; } }
-.about .container .col .info {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-}
-
-.about .container .col .info img {
-    border-radius: 5px;
-    margin: 10px;
-    width: 150px;
-    height: 150px;
-}
-.about .container .col .info .det { 
-    
-    width: calc(100% - 200px);
-
-    
-    justify-content: space-between;
-    display: flex;
-    margin: 0;
-}
-
-.about .container .col .info .det p {
-    font-size: 16px;
-    color: var(--text-font-color);
-    margin: 20px;
-}
-.about .container .col .info .det p span {
-    font-weight: 500;
-    color: var(--title-font-color);
-}
-
-@media (max-width:586px) {
-    .about .container .col .info {
-        flex-direction: column;
-        align-items: center;
-    } 
-    .about .container .col .info .det { width: 85%; }
-}
-.about .container .col .skills {
-    padding: 10px 20px;
-}
-.about .container .col .skills h2 {
-    font-size: 20px;
-    font-weight: 500;
-    color: var(--title-font-color);
-}
-.about .container .col .skills p {
-    font-size: 16px;
-    font-weight: 400;
-    color: var(--text-font-color);
-}
-.about .container .col .skills hr {
-    border: none;
-    height: 10px;
-    margin-bottom: 30px;
-    color: var(--hr-two-color);
-}
-.about .container .col .skills .html { background-image: linear-gradient(to right , var(--hr-one-color) 0% , var(--hr-one-color) 85% , var(--hr-two-color) 85% );}
-.about .container .col .skills .css { background-image: linear-gradient(to right , var(--hr-one-color) 0% , var(--hr-one-color) 75% , var(--hr-two-color) 75% );}
-.about .container .col .skills .php { background-image: linear-gradient(to right , var(--hr-one-color) 0% , var(--hr-one-color) 50% , var(--hr-two-color) 50% );}
-.about .container .col .skills .js { background-image: linear-gradient(to right , var(--hr-one-color) 0% , var(--hr-one-color) 90% , var(--hr-two-color) 90% );}
-
-.about .container .col .sp-1{
-    font-size: 30px;
-    font-weight: 500;
-    margin: 10px;
-    margin-top: 20px;
-
-}
-.about .container .col .sp-1 + hr{
-    
-    display: block;
-    position: absolute;
-    left: 52.6%; 
-    bottom: -195px;
-    width: 129px;
-    height: 3px;
-    background: var(--primaryColor);
-    margin: 0px 10px;
-    border: none;
-}
-.about .container .col .text {
-    margin-top: 30px;
-    padding: 10px;
-    font-size: 18px;
-    font-weight: 300;
-    letter-spacing: 1px;
-    line-height: 1.5;
-    color: var(--text-font-color);
-} */
 /*  */
 
 /*  */

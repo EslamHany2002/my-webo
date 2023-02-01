@@ -104,7 +104,8 @@ html{
     letter-spacing: 1px;
     margin-top: 10px;
     display: inline-block;
-    padding: 0px 15px;
+    padding: 10px 20px;
+    
 }
 .nav-bar .container ul li hr {   
     height: 3px;
@@ -141,6 +142,7 @@ html{
         justify-content: end;
         flex-wrap: wrap;  
         position: relative;
+        
     }
     .nav-bar .container .icons span {   
         background-color: var(--bg-one);
@@ -578,7 +580,11 @@ header ul li a:hover{
         flex-direction: column;
         align-items: center;
     } 
+    
     .about .container .col .info .det { width: 85%; }
+    .about .container .col .info .det p{
+        font-size: 14.5px;
+    }
 }
 .about .container .col .skills {
     padding: 10px 20px;
@@ -809,7 +815,7 @@ header ul li a:hover{
 }
 @media(max-width:450px){
     .contaniner-r{
-        padding: 92px 30px;
+        padding: 92px 22px;
     }
 }
 
@@ -1004,7 +1010,7 @@ header ul li a:hover{
 #projects .project-img img {
 	transition: 0.3s ease transform;
     height: 51vh;
-    width: 76vh;
+    width: 100%;
 }
 #projects .project-item:hover .project-img img {
 	transform: scale(1.1);
@@ -1039,6 +1045,12 @@ header ul li a:hover{
 	#projects .all-projects .project-img {
 		height: 100%;
 	}
+    
 }
-
+@media(max-width:450px){
+    #projects .project-img img{
+        width: 100%;
+        
+    }
+}
 

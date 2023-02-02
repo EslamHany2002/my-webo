@@ -540,10 +540,10 @@ header ul li a:hover{
 .about .container .col .info img {
     border-radius: 5px;
     margin: 10px;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
 }
-.about .container .col .info .det { width: calc(100% - 200px); }
+.about .container .col .info .det { width: calc(91% - 170px); }
 .about .container .col .info .det p {
     font-size: 16px;
     color: var(--text-font-color);

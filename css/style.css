@@ -1030,5 +1030,8 @@ header ul li a:hover{
         width: 100%;
         
     }
+    #projects .project-info h1{
+        font-size: 3rem;
+    }
 }
 

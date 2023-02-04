@@ -1007,6 +1007,7 @@ header ul li a:hover{
 @media only screen and (min-width: 768px) {
     #projects .project-item {
 		flex-direction: row;
+        width: 88%;
 	}
 	#projects .project-item:nth-child(even) {
 		flex-direction: row-reverse;
@@ -1025,6 +1026,18 @@ header ul li a:hover{
 	}
     
 }
+@media only screen and (min-width: 500px) {
+    #projects .project-item {
+	
+        width: 88%;
+	}
+    #projects .project-img img{
+        height: 66vh;
+        
+    }
+	
+    
+}
 @media(max-width:450px){
     #projects .project-img img{
         width: 100%;
@@ -1033,5 +1046,8 @@ header ul li a:hover{
     #projects .project-info h1{
         font-size: 3rem;
     }
+    #projects .project-item {
+        width: 86%;
+	}
 }
 

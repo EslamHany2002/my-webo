@@ -59,18 +59,15 @@ html{
 
 /*/////////////////////////////////////////////////*/
 .nav-bar {
-    position: absolute;
+    position: fixed;
     width: 100%;
-    
-    background-color: rgba(0, 0, 0,0.5);
+    background-color: rgba(0, 0, 0,0.8);
     transition: 0.5s;
-    
     z-index: 1000;
-    padding-top: 1.5%;
     padding-left: 5%;
     padding-right: 2%;
-    padding-bottom: 1.5%;
 }
+
 .nav-bar a {
     text-decoration: none;
     color: white;
@@ -92,10 +89,12 @@ html{
     font-weight: 600;
     letter-spacing: 2px;
 } */
-.nav-bar h2{
-    color: var(--bg-one);
+.nav-bar .container .title{
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 2px;
 }
-.nav-bar h2 span{
+.nav-bar .container .title span{
     color: var(--primaryColor);
 }
 .nav-bar .container ul li {   
@@ -503,6 +502,17 @@ header ul li a:hover{
     flex-wrap: wrap;
     position: relative;
 }
+@media(max-width:1025px){
+    .home .image img{
+        height: 350px;
+    }
+    .home .image::before{
+        left: 0px;
+    }
+    .home .image::after{
+        right: 0px;
+    }
+}
 @media(max-width:767px){
     .home .text{
         flex: 0 0 90%;
@@ -523,7 +533,7 @@ header ul li a:hover{
 .about .container
 {
     background-color: var(--bg-one);
-    box-shadow: 0px 2px 10px 0px var(--shadow);
+    box-shadow: 0px 2px 30px 3px var(--shadow);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -663,7 +673,7 @@ header ul li a:hover{
 }
 @media(max-width:425px){
     .footer-2 .container {
-        font-size: 15px;
+        font-size: 14px;
     }
     .Social {
         margin-top: 2.5rem;
@@ -893,10 +903,17 @@ header ul li a:hover{
     font-size: 0.875rem;
     color: var(--primaryColor);
   }
+  @media(max-width:1025px){
+    .qualification_container{
+        grid-template-columns: repeat(3,240px);
+        column-gap: 5.5rem;
+        
+    }
+  }
   @media(max-width:1000px){
     .qualification_container{
         grid-template-columns: repeat(2,240px);
-        column-gap: 1rem;
+        column-gap: 2rem;
         
     }
     .qualification .qualification__title{
@@ -987,7 +1004,7 @@ header ul li a:hover{
 }
 #projects .project-img img {
 	transition: 0.3s ease transform;
-    height: 51vh;
+    height: 100%;
     width: 100%;
 }
 #projects .project-item:hover .project-img img {
@@ -1031,10 +1048,10 @@ header ul li a:hover{
 	
         width: 88%;
 	}
-    #projects .project-img img{
+    /* #projects .project-img img{
         height: 66vh;
         
-    }
+    } */
 	
     
 }

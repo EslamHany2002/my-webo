@@ -344,6 +344,19 @@ header ul li a:hover{
    
       
 }
+@media(max-width:426px){
+    .home{
+        background-position: 558px;
+    }   
+}
+@media (max-width:323px){
+    .home h1 {
+        font-size: 3.1rem;
+    }
+    .home{
+        background-position: 550px;
+    }
+}
 
 @keyframes typing {
     0% {content: "";}
@@ -713,7 +726,7 @@ header ul li a:hover{
 .Social img:hover{
     transform: scale(1.2);
 }
-@media(max-width:425px){
+@media(max-width:426px){
     .footer-2 .container {
         font-size: 14px;
     }
@@ -971,7 +984,14 @@ header ul li a:hover{
         padding-top: 50px;
     }
   }
-  @media(max-width:450px){
+  @media(max-width:562px){
+    .qualification_container{
+        grid-template-columns: repeat(2,210px);
+        column-gap: 0.9rem;
+        
+    }
+  }
+  @media(max-width:460px){
     .qualification_container{
         grid-template-columns: repeat(1,240px);
         column-gap: 2rem;
